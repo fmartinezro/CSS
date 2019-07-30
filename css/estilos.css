@@ -1,8 +1,14 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fuentes/DancingScript-Regular.ttf);
+}
+
 body {
 	margin-left: 15%;
-	font-family: Verdana;
+	font-family:DancingScript;
 	width: 70%;
 	color: #605B56;
+	background: #02010A
 }
 
 header{
@@ -27,7 +33,13 @@ header h1{
 
 #contenido {
 	display: flex;
-	flex-direction: column;
+  flex-direction:column;
+}
+
+media(max-width:900px){
+	#contenido {
+		width:100%;
+	}
 }
 
 #contenido > section > h1 {
@@ -38,13 +50,15 @@ header h1{
 #fotografia {
 	text-align: center;
 	background-color: #82C3A6;
+
 }
 
 #fotografia p img {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	padding-left: 10px;
+	padding-left: 0px;
 	text-align: center;
+	box-shadow: 2px 2px #02010A;
 
 }
 
@@ -61,12 +75,7 @@ header h1{
 	text-align: center;
 	padding: 10px;
 	margin: 10px;
-	background-color: white;
 	width: 50%;
-	border-top: solid 1px black;
-	border-bottom: solid 1px black;
-	border-left: solid 1px black;
-	border-right: solid 1px black;
 }
 
 #camaras h1 {
@@ -74,7 +83,7 @@ header h1{
 }
 
 #imagen1 img{
-   transform: rotate(0deg);
+   box-shadow: 2px 2px #02010A;
 }
 
 #imagen1 img:hover{
@@ -84,20 +93,33 @@ header h1{
 		border-bottom: solid 2px black;
 		border-left: solid 2px black;
 		border-right: solid 2px black;
+
 }
 
 #imagen2 img{
-	  
+	box-shadow: 2px 2px #02010A;
 }
 
 #imagen2 img:hover{
-  transform: translate(20px, 5px);
-  box-shadow: 4px 8px #82C3A6;
+  transform: translate(5px, 20px);
+	box-shadow: 4px 8px #82C3A6;
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
 	border-left: solid 2px black;
 	border-right: solid 2px black;
 }
+
+@media (min-width: 900px) {
+	#contenido,#camaras,#imagen1,#imagen2 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+@media (min-width: 450px) {
+		#contenido,#camaras,#imagen1,#imagen2 {
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 footer {
 	clear: both;
