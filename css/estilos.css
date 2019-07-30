@@ -1,0 +1,108 @@
+body {
+	margin-left: 15%;
+	font-family: Verdana;
+	width: 70%;
+	color: #605B56;
+}
+
+header{
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(right, #5B7989 , #BADFBC); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #5B7989 , #BADFBC); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #5B7989 , #BADFBC); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #5B7989, #BADFBC); /* Standard syntax */
+	border-radius: 10px;
+}
+
+header h1{
+  text-shadow: 2px 2px 2px #02010A;
+	color:#FFFFFF;
+	padding-left: 10px;
+}
+
+#menu-principal ul{
+	text-align: right;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#contenido > section > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+#fotografia {
+	text-align: center;
+	background-color: #82C3A6;
+}
+
+#fotografia p img {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	text-align: center;
+
+}
+
+#camaras {
+	background-color: #D5C75F;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+#camaras .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	width: 50%;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+}
+
+#camaras h1 {
+	text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+}
+
+#imagen1 img{
+   transform: rotate(0deg);
+}
+
+#imagen1 img:hover{
+	  transform: rotate(10deg);
+		box-shadow: 4px 8px #82C3A6;
+		border-top: solid 2px black;
+		border-bottom: solid 2px black;
+		border-left: solid 2px black;
+		border-right: solid 2px black;
+}
+
+#imagen2 img{
+	  
+}
+
+#imagen2 img:hover{
+  transform: translate(20px, 5px);
+  box-shadow: 4px 8px #82C3A6;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+	border-left: solid 2px black;
+	border-right: solid 2px black;
+}
+
+footer {
+	clear: both;
+	//border-top: solid 2px #605B56;
+	padding-top: 10px;
+	margin-top: 15px;
+	text-align: center;
+}
