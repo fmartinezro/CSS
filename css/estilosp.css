@@ -38,16 +38,6 @@ a.nounderline:link
 text-decoration:none;
 }
 
-#contenedor {
-	display: flex;
-  flex-direction:column;
-}
-
-#fotografia {
-	background-color: #82C3A6;
-
-}
-
 #contenido{
 	margin:0 auto;
 	background-color: #D5C75F;
@@ -60,46 +50,61 @@ text-decoration:none;
 }
 
 .imagenes1{
-	width:50%;
+	width:33.333%;
 	text-align:center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.imagenes1 img:hover{
-	  transform: rotate(10deg);
-		transition-duration: 0.5s;
-		border-top: solid 2px black;
-		border-bottom: solid 2px black;
-		border-left: solid 2px black;
-		border-right: solid 2px black;
-		box-shadow: 4px 8px #82C3A6;
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
 }
 
 .imagenes2{
-	width:50%;
+	width:33.333%;
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+.imagenes3{
+	width:33.333%;
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+
+.imagenes4{
+	width:33.333%;
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+
+.imagenes5{
+	width:33.333%;
 	text-align:center;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.imagenes2 img:hover{
-  transform: translate(20px);
-	transition-duration: 0.5s;
-	border-top: solid 2px black;
-	border-bottom: solid 2px black;
-	border-left: solid 2px black;
-	border-right: solid 2px black;
-	box-shadow: 4px 8px #82C3A6;
+.imagenes6{
+	width:33.333%;
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
 }
 
 img{
 	width:80%;
 	margin:0 auto;
 	display:block;
-	box-shadow: 2px 2px #02010A;
-	border-left: solid 1px black;
-	border-right: solid 1px black;
 }
 
 @media only screen and (max-width: 900px) {
@@ -113,6 +118,22 @@ img{
 	}
 
 	.imagenes2{
+		width:100%;
+	}
+
+	.imagenes3{
+		width:100%;
+	}
+
+	.imagenes4{
+		width:100%;
+	}
+
+	.imagenes5{
+		width:100%;
+	}
+
+	.imagenes6{
 		width:100%;
 	}
 
@@ -138,7 +159,6 @@ footer {
 
 .c1 {
 	color: black;
-
 }
 
 .c2 {
